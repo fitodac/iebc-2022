@@ -38,8 +38,7 @@ const showModal = obj => {
 const closeModal = () => {
 	show_modal.value = false
 	document.body.classList.remove('overflow-hidden')
-	Object.keys(list).forEach(key => delete list[key]);
-	console.log('list', list)
+	Object.keys(list).forEach(key => delete list[key])
 }
 
 

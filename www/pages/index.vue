@@ -75,10 +75,6 @@ const section_controls_idx = ref(0)
 
 section_controls[0][0].active = true
 
-
-// console.log('sections', sections)
-// console.log('section_controls', section_controls)
-
 const swiper = ref(null)
 
 const sliderNavigate = id => swiper.value.slideTo(id, .8, true)

@@ -13,8 +13,6 @@ const menu = store.getMenu.map(el => {
 	return el
 })
 
-console.log('menu', env.public.base_url, menu)
-
 const social = computed(() => store.data.global.social_networks)
 const activities = reactive(store.data.pages.inicio.acf.sections)
 

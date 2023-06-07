@@ -7,10 +7,8 @@ export default defineNuxtConfig({
 
 	publicRuntimeConfig: {
 		name: 'Iglesia de Carrasco',
-    api_url: 'https://api.iglesiadecarrasco.com/wp-json/wp/v2/',
-		base_url: 'https://api.iglesiadecarrasco.com/'
-    // api_url: 'https://iebc.fitodac.com/api/wp-json/wp/v2/',
-		// base_url: 'https://iebc.fitodac.com/api/'
+    api_url: 'https://iebc.demo-staging.com/api/wp-json/wp/v2/',
+		base_url: 'https://iebc.demo-staging.com/api/'
   },
 
 	app: {

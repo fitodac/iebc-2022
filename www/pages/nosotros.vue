@@ -14,7 +14,6 @@ const env = useRuntimeConfig()
 const sections = reactive({})
 
 for(const key in store.data.pages['soy-nuevo'].acf){
-	console.log('key', key)
 	if('short_content' !== key && 'title' !== key && 'image' !== key){
 		sections[key] = store.data.pages['soy-nuevo'].acf[key]
 	}

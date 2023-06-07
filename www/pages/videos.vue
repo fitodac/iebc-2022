@@ -24,26 +24,14 @@ const yt_url = ref(store.data.global.social_networks.youtube)
 const error_msj = ref(false)
 
 if( !Object.keys(videos.value).length ){
-	// console.log('videos:', yt)
-	// const {pending, data: resp, error} = await yt
 	const {pending, data: resp, error} = await useFetch('https://youtube.googleapis.com/youtube/v3/search?'+ytparams.join('&'))
-
-	console.log('error', error)
-	console.log(resp.value)
 
 	if( error.value ){
 		error_msj.value = true
 	}else{
 		store.setVideos(resp.value)
-		// store.setVideos(yt)
 	}
-
-	// if( resp ){}
-	// store.setVideos({'a': 'video 1', 'b': 'video 2'})
 }
-
-
-// console.log('videos:', videos.length)
 
 
 
